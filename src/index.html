@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de simulación de reserva de horas médicas">
+    <title>Centro Médico ABC | Reserva de horas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Centro Médico ABC</h1>
+        <p>Reserva de horas médicas</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="formulario">
+            <h2>Solicitar una hora médica</h2>
+            <p class="descripcion">
+                Completa los siguientes datos para simular una reserva.
+            </p>
+
+            <form action="#" method="get">
+
+                <div class="grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingresa tu nombre"
+                        required
+                    >
+                </div>
+
+                <div class="grupo">
+                    <label for="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+                </div>
+
+                <div class="grupo">
+                    <label for="especialidad">Especialidad médica</label>
+                    <select id="especialidad" name="especialidad" required>
+                        <option value="">Selecciona una especialidad</option>
+                        <option value="medicina-general">Medicina general</option>
+                        <option value="cardiologia">Cardiología</option>
+                        <option value="pediatria">Pediatría</option>
+                        <option value="traumatologia">Traumatología</option>
+                        <option value="dermatologia">Dermatología</option>
+                    </select>
+                </div>
+
+                <div class="grupo">
+                    <label for="fecha">Fecha de atención</label>
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required
+                    >
+                </div>
+
+                <div class="grupo">
+                    <label for="hora">Horario disponible</label>
+                    <select id="hora" name="hora" required>
+                        <option value="">Selecciona un horario</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
+                </div>
+
+                <button type="submit">Solicitar reserva</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Centro Médico ABC - Proyecto académico de simulación</p>
+        <p>No se realizan reservas médicas reales.</p>
+    </footer>
+
+</body>
+</html>

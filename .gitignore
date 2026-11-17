@@ -1,0 +1,21 @@
+# Variables de entorno reales
+.env
+.env.*
+!.env.example
+
+# Archivos temporales y logs
+*.log
+logs/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuración personal de editores
+.vscode/
+.idea/
+
+# Archivos temporales
+*.tmp
+*.bak
